@@ -1,0 +1,21 @@
+html {
+    font-size: 62.5%; /* Default fontsize in browser is 16px, multiply it * 62.5 = 10px which is 1rem (default in almost all browsers */
+    box-sizing: border-box; /* bc it helps to better format boxes like divs to set width, margin, padding for them*/ 
+}
+
+.container {
+    display: inline-block;
+    font-size: 1.8rem;
+    margin-top: 18%;
+    margin-left: 35%;
+    align-content: center;
+}
+
+#Excuse {
+    padding-left: 30px;       
+}
+
+#button {
+    margin-left: 130px;
+    margin-top: 30px;
+}

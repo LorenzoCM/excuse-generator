@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Excuse Generator</title>
+	<link rel="stylesheet" href="styles.css">
+	<script type="text/javascript" src="./jquery-3.5.1.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div id="OMG"><h2>OMG you will not believe me but... <br></h2></div>
+		<div id="Excuse"><h3>my dog eat my homework</h3></div>
+		<button id="button">Generate Excuse</button>
+	</div>
+
+	<script type="text/javascript">
+
+	window.onload = () => {
+		document.querySelector("#button").addEventListener("click", () => {
+			document.querySelector("#Excuse").innerHTML = generateExcuse();
+		})		
+	}
+		
+			let generateExcuse = () => {
+
+			let who = ["my dog", "my cat", "my mom", "my turtle"];
+			let what = ["eat", "pissed", "broke", "crushed"];
+			let object = ["my phone", "my homework", "my books", "my assignment"];
+			let when = ["before class", "right in time", "while i was praying", "during my lunch"];
+
+			let whoIndex = Math.floor(Math.random() * who.length);
+			let whatIndex = Math.floor(Math.random() * what.length);
+			let objectIndex = Math.floor(Math.random() * object.length);
+			let whenIndex = Math.floor(Math.random() * when.length);
+
+			return who[whoIndex] + " " + what[whatIndex] + " " + object[objectIndex] + " " + when[whenIndex] + ".";
+		}		
+	</script>
+</body>
+</html>
